@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<script>
+let quiz = [
+    {title: "2+2", answer: '4'},
+    {title: "100/5", answer: '20'},
+    {title: "25 x 4", answer: '100'},
+    {title: "64 - 8", answer: '56'},
+    {title: "who is the best teacher in programming", answer: 'pgh'},
+]
+
+
+score = 0
+
+quiz.forEach((question)=>{
+   currentQ = prompt(question.title + '?')
+    if(currentQ == question.answer){
+        score++
+        alert('good job!')
+    }else{
+       alert('oops! your score until now is ' + score)
+    }
+})
+alert("your  total score is: " + score)
+
+</script>
+</body>
+
+</html>
